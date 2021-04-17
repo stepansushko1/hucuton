@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>pizda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/nu_and.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">Оцінка якості освіти</div>
+
+            <div class="dropdown">
+                <button onclick="clickFaculty()" class="buttonFac">Факультет▼</button>
+                <div id="dropdownFacContent" class="dropdownFacContent">
+                    <a href="#">ФПН</a>
+                    <a href="#">всі</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="clickUniversity()" class="buttonUniv">Універ▼</button>
+                <div id="dropdownUnivContent" class="dropdownUnivContent">
+                    <a href="#">ФПН</a>
+                    <a href="#">всі</a>
+                </div>
+            </div>
+
+            <script src="button.js"></script>
+        </div>
+    </div>
+</header>
+
+<div class="intro">
+    <div class="info">Викладачі Факультету прикладних наук</div>
+    {% for _ in range(5) %}
+        {% for person in content %}
+            <a href="/teacher/{{ '_'.join(person[0].split()) }}" class="box">
+                <img src={{person[2]}} class="image" alt="portrait of lector">
+                <div class="name">{{person[0]}}</div>
+
+                <div class="stars">
+                    <span>4.4/5</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="numVotes">Кількість голосів: 420</div>
+            </a>
+        {% endfor %}
+    {% endfor %}
+    <h1>The most common kinds of true arch are the fixed arch, the two-hinged arch, and the three-hinged arch.[11]
+
+        The fixed arch is most often used in reinforced concrete bridges and tunnels, which have short spans. Because it is subject to additional internal stress from thermal expansion and contraction, this kind of arch is considered statically indeterminate.[10]
+
+        The two-hinged arch is most often used to bridge long spans.[10] This kind of arch has pinned connections at its base. Unlike that of the fixed arch, the pinned base can rotate,[12] thus allowing the structure to move freely and compensate for the thermal expansion and contraction that changes in outdoor temperature cause. However, this can result in additional stresses, and therefore the two-hinged arch is also statically indeterminate, although not as much as the fixed arch.[10]
+
+        The three-hinged arch is not only hinged at its base, like the two-hinged arch, yet also at its apex. The additional apical connection allows the three-hinged arch to move in two opposite directions and compensate for any expansion and contraction. This kind of arch is thus not subject to additional stress from thermal change. Unlike the other two kinds of arch, the three-hinged arch is therefore statically determinate.[11] It is most often used for spans of medial length, such as those of roofs of large buildings. Another advantage of the three-hinged arch is that the pinned bases are more easily developed than fixed ones, which allows shallow, bearing-type foundations in spans of medial length. In the three-hinged arch "thermal expansion and contraction of the arch will cause vertical movements at the peak pin joint but will have no appreciable effect on the bases," which further simplifies foundational design.[10]
+        The most common kinds of true arch are the fixed arch, the two-hinged arch, and the three-hinged arch.[11]
+
+        The fixed arch is most often used in reinforced concrete bridges and tunnels, which have short spans. Because it is subject to additional internal stress from thermal expansion and contraction, this kind of arch is considered statically indeterminate.[10]
+
+        The two-hinged arch is most often used to bridge long spans.[10] This kind of arch has pinned connections at its base. Unlike that of the fixed arch, the pinned base can rotate,[12] thus allowing the structure to move freely and compensate for the thermal expansion and contraction that changes in outdoor temperature cause. However, this can result in additional stresses, and therefore the two-hinged arch is also statically indeterminate, although not as much as the fixed arch.[10]
+
+        The three-hinged arch is not only hinged at its base, like the two-hinged arch, yet also at its apex. The additional apical connection allows the three-hinged arch to move in two opposite directions and compensate for any expansion and contraction. This kind of arch is thus not subject to additional stress from thermal change. Unlike the other two kinds of arch, the three-hinged arch is therefore statically determinate.[11] It is most often used for spans of medial length, such as those of roofs of large buildings. Another advantage of the three-hinged arch is that the pinned bases are more easily developed than fixed ones, which allows shallow, bearing-type foundations in spans of medial length. In the three-hinged arch "thermal expansion and contraction of the arch will cause vertical movements at the peak pin joint but will have no appreciable effect on the bases," which further simplifies foundational design.[10]
+        The most common kinds of true arch are the fixed arch, the two-hinged arch, and the three-hinged arch.[11]
+
+        The fixed arch is most often used in reinforced concrete bridges and tunnels, which have short spans. Because it is subject to additional internal stress from thermal expansion and contraction, this kind of arch is considered statically indeterminate.[10]
+
+        The two-hinged arch is most often used to bridge long spans.[10] This kind of arch has pinned connections at its base. Unlike that of the fixed arch, the pinned base can rotate,[12] thus allowing the structure to move freely and compensate for the thermal expansion and contraction that changes in outdoor temperature cause. However, this can result in additional stresses, and therefore the two-hinged arch is also statically indeterminate, although not as much as the fixed arch.[10]
+
+        The three-hinged arch is not only hinged at its base, like the two-hinged arch, yet also at its apex. The additional apical connection allows the three-hinged arch to move in two opposite directions and compensate for any expansion and contraction. This kind of arch is thus not subject to additional stress from thermal change. Unlike the other two kinds of arch, the three-hinged arch is therefore statically determinate.[11] It is most often used for spans of medial length, such as those of roofs of large buildings. Another advantage of the three-hinged arch is that the pinned bases are more easily developed than fixed ones, which allows shallow, bearing-type foundations in spans of medial length. In the three-hinged arch "thermal expansion and contraction of the arch will cause vertical movements at the peak pin joint but will have no appreciable effect on the bases," which further simplifies foundational design.[10]
+    </h1>
+</div>
+
+
+</body>
+</html>
